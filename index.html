@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PrimaVera</title>
+    <link rel="icon" href="media/images/favicon.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./sass/index.css">
+    <script src="https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"></script>
+</head>
+<body>
+
+
+
+<div class="shadow hidden" id="shadow">
+    <div class="shadow__elem">
+        <label class="shadow__elem__email">
+            <input type="text" placeholder="your@email.com" class="shadow__elem__email-input">
+        </label>
+        <label class="shadow__elem__password">
+            <input type="password" placeholder="password" class="shadow__elem__password-input">
+        </label>
+        <div class="shadow__elem__buttons">
+            <a href="#" class="shadow__elem__buttons-continue" id="continue">Continue</a>
+            <a href="#" class="shadow__elem__buttons-cancel" id="cancel">Cancel</a>
+        </div>
+    </div>
+</div>
+
+
+
+<header class="header">
+    <div class="wrapper">
+        <div class="header__logo">
+            <a href="./index.html" class="header__logo-name">
+                <p class="header__logo-name__title">PrimaVera</p>
+                <p class="header__logo-name__slogan">Eat what you want.</p>
+            </a>
+        </div>
+        <div class="header__wrapper">
+            <nav class="header__navigation">
+                <ul class="header__navigation__list">
+                    <li class="header__navigation__list-item">
+                        <a href="./index.html" class="header__navigation__list-item__link">HOME</a>
+                    </li>
+                    <li class="header__navigation__list-item">
+                        <a href="./pages/menu.html" class="header__navigation__list-item__link">MENU</a>
+                    </li>
+                    <li class="header__navigation__list-item">
+                        <a href="./pages/reservation.html" class="header__navigation__list-item__link">RESERVATION</a>
+                    </li>
+                    <li class="header__navigation__list-item">
+                        <a href="./pages/about.html" class="header__navigation__list-item__link">ABOUT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__signBtn">
+                <a href="#" id="signBtn">sign in</a>
+                <a href="#" id="signOutBtn" class="hidden">sign out</a>
+            </div>
+        </div>
+        <div class="header__container">
+            <div class="header__burger">
+                <span class="header__burger-btn"></span>
+            </div>
+            <div class="header__burger-menu">
+                <nav class="header__burger-menu__navigation">
+                    <ul class="header__burger-menu__navigation__list">
+                        <li class="header__burger-menu__navigation__list__item">
+                            <a href="./index.html">HOME</a>
+                        </li>
+                        <li class="header__burger-menu__navigation__list__item">
+                            <a href="./pages/menu.html">MENU</a>
+                        </li>
+                        <li class="header__burger-menu__navigation__list__item">
+                            <a href="./pages/reservation.html">RESERVATION</a>
+                        </li>
+                        <li class="header__burger-menu__navigation__list__item">
+                            <a href="./pages/about.html">ABOUT</a>
+                        </li>
+                    </ul>
+                    <div class="header__burger-signBtn">
+                        <a href="#" id="signBtn-burger">sign in</a>
+                        <a href="#" id="signOutBtn-burger" class="hidden">sign out</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header__slogan">
+        <h1 class="header__slogan-main">IF YOUR CAN DREAM IT, YOUR CAN DO IT.</h1>
+        <h2 class="header__slogan-small">A small river named Duden flows by their place and supplies it with.</h2>
+    </div>
+</header>
+
+<section class="main">
+    <div class="main__dish">
+        <h2 class="main__dish-title">Dishes of the day</h2>
+        <p class="main__dish-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <ul class="main__dish__list">
+            <li class="main__dish__list__item">
+                <img src="media/images/sandwich.jpg" alt="sandwiches" class="main__dish__list__item-img">
+                <h2 class="main__dish__list__item-name">Sandwiches</h2>
+                <p class="main__dish__list__item-description">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a para
+                </p>
+            </li>
+            <li class="main__dish__list__item">
+                <img src="media/images/pasta.jpg" alt="pasta" class="main__dish__list__item-img">
+                <h3 class="main__dish__list__item-name">Pasta</h3>
+                <p class="main__dish__list__item-description">
+                    She packed her seven versalia, put her initial into the belt and made herself on the way. hen she reached the first hills of the Italic
+                </p>
+            </li>
+            <li class="main__dish__list__item">
+                <img src="media/images/bruschetta.jpg" alt="bruschetta" class="main__dish__list__item-img">
+                <h3 class="main__dish__list__item-name">Bruschetta</h3>
+                <p class="main__dish__list__item-description">
+                    The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Ques- tion Marks and devious
+                </p>
+            </li>
+        </ul>
+        <a href="./pages/menu.html" class="main__dish__menuBtn">VIEW FULL MENU</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__menu">
+        <nav class="footer__menu__navigation">
+            <ul class="footer__menu__navigation__list">
+                <li class="footer__menu__navigation__list__item">
+                    <a href="./pages/reservation.html" class="footer__menu__navigation__list__item-link">Reservation</a>
+                </li>
+                <li class="footer__menu__navigation__list__item">|</li>
+                <li class="footer__menu__navigation__list__item">
+                    <a href="./pages/menu.html" class="footer__menu__navigation__list__item-link">Menu</a>
+                </li>
+                <li class="footer__menu__navigation__list__item">|</li>
+                <li class="footer__menu__navigation__list__item">
+                    <a href="pages/about.html" class="footer__menu__navigation__list__item-link">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="footer__contacts">
+        <p class="footer__contacts__call">Call:
+            <a href="tel: +123456789" class="footer__contacts__call-number">123456789</a>
+        </p>
+        <p class="footer__contacts__email">Email:
+            <a href="mailto: yourEmail@mail.com" class="footer__contacts__email-address">yourEmail@mail.com</a>
+    </div>
+    <div class="footer__subscribe">
+        <h2 class="footer__subscribe__title">Subscribe & Follow</h2>
+        <ul class="footer__subscribe__list">
+            <li class="footer__subscribe__list__item">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__subscribe__list__item-link">
+                    <img src="media/images/facebook.png" alt="facebook">
+                </a>
+            </li>
+            <li class="footer__subscribe__list__item">
+                <a href="https://www.instagram.com/" target="_blank" class="footer__subscribe__list__item-link">
+                    <img src="media/images/instagram.png" alt="instagram">
+                </a>
+            </li>
+            <li class="footer__subscribe__list__item">
+                <a href="https://twitter.com/" target="_blank" class="footer__subscribe__list__item-link">
+                    <img src="media/images/twitter.png" alt="twitter">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script type="module" src="./js/index.js"></script>
+
+</body>
+</html>

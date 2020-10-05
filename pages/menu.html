@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="icon" href="../media/images/favicon.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../sass/menu.css">
+    <script src="https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"></script>
+</head>
+<body>
+
+<div class="shadow hidden" id="shadow">
+    <div class="shadow__elem">
+        <label class="shadow__elem__email">
+            <input type="text" placeholder="your@email.com" class="shadow__elem__email-input">
+        </label>
+        <label class="shadow__elem__password">
+            <input type="password" placeholder="password" class="shadow__elem__password-input">
+        </label>
+        <div class="shadow__elem__buttons">
+            <a href="#" class="shadow__elem__buttons-continue" id="continue">Continue</a>
+            <a href="#" class="shadow__elem__buttons-cancel" id="cancel">Cancel</a>
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="wrapper">
+        <div class="header__logo">
+            <a href="../index.html" class="header__logo-name">
+                <p class="header__logo-name__title">PrimaVera</p>
+                <p class="header__logo-name__slogan">Eat what you want.</p>
+            </a>
+        </div>
+        <div class="header__wrapper">
+            <nav class="header__navigation">
+                <ul class="header__navigation__list">
+                    <li class="header__navigation__list-item">
+                        <a href="../index.html" class="header__navigation__list-item__link">HOME</a>
+                    </li>
+                    <li class="header__navigation__list-item">
+                        <a href="./menu.html" class="header__navigation__list-item__link">MENU</a>
+                    </li>
+                    <li class="header__navigation__list-item">
+                        <a href="./reservation.html" class="header__navigation__list-item__link">RESERVATION</a>
+                    </li>
+                    <li class="header__navigation__list-item">
+                        <a href="./about.html" class="header__navigation__list-item__link">ABOUT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__signBtn">
+                <a href="#" id="signBtn">sign in</a>
+                <a href="#" id="signOutBtn" class="hidden">sign out</a>
+            </div>
+        </div>
+        <div class="header__container">
+            <div class="header__burger">
+                <span class="header__burger-btn"></span>
+            </div>
+            <div class="header__burger-menu">
+                <nav class="header__burger-menu__navigation">
+                    <ul class="header__burger-menu__navigation__list">
+                        <li class="header__burger-menu__navigation__list__item">
+                            <a href="../index.html">HOME</a>
+                        </li>
+                        <li class="header__burger-menu__navigation__list__item">
+                            <a href="./menu.html">MENU</a>
+                        </li>
+                        <li class="header__burger-menu__navigation__list__item">
+                            <a href="./reservation.html">RESERVATION</a>
+                        </li>
+                        <li class="header__burger-menu__navigation__list__item">
+                            <a href="./about.html">ABOUT</a>
+                        </li>
+                    </ul>
+                    <div class="header__burger-signBtn">
+                        <a href="#" id="signBtn-burger">sign in</a>
+                        <a href="#" id="signOutBtn-burger" class="hidden">sign out</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header__slogan">
+        <h1 class="header__slogan-main">DRINK, EAT, CODE...</h1>
+        <h2 class="header__slogan-small">The meal can be accompanied by alcoholic</h2>
+    </div>
+</header>
+<section class="content">
+    <div class="content__container">
+        <section class="page__content">
+            <div class="grid">
+                <div class="grid__item">
+                    <div class="menu">
+                        <h2 class="menu__title table__of__contents">Starters</h2>
+                        <ul class="menu__items">
+                            <li class="menu__item">
+                                <div class="menu__item-highlight-wrapper"><span class="menu__item-highlight-title">Chef Selection</span>
+                                    <h4 class="menu__item__title "><span class="item__title">Pasta</span></h4>
+                                    <p class="menu__item__description">Spaghetti, olive oil, garlic, ham, egg yolk, parmesan cheese, cream, salt, ground black pepper.</p>
+                                    <span class="menu__item__dots"></span><span class="menu__item__price">$8</span>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Seasonal Soup</span></h4>
+                                <p class="menu__item__description">Daily preparation</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$5</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Sandwiches</span></h4>
+                                <p class="menu__item__description">Toast bread, ham, cheese, hot sauce, tomato, onion, butter, alat-lettuce.</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$4</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">English-asparagus</span></h4>
+                                <p class="menu__item__description">Asparagus, hens egg, toasted sunflower seeds, Spenwood cheese</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$14</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Cornish-mackerel</span></h4>
+                                <p class="menu__item__description">Cornish mackerel, marinated tomatoes, fragrant curry, tamarillo</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$10</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Quail</span></h4>
+                                <p class="menu__item__description">Smoked quail, crispy egg, spelt, girolles, parsley</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$9</span>
+                            </li>
+                            <li class="menu__item">
+                                <div class="menu__item-highlight-wrapper">
+                                    <span class="menu__item-highlight-title">Chef Selection</span>
+                                    <h4 class="menu__item__title"><span class="item__title">Curry-Tamarillor</span></h4>
+                                    <p class="menu__item__description">Cornish mackerel, marinated tomatoes, fragrant curry, tamarillo</p>
+                                    <span class="menu__item__dots"></span>
+                                    <span class="menu__item__price"> $7</span>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Crispy</span></h4>
+                                <p class="menu__item__description">Smoked quail, crispy egg, spelt, girolles, parsley</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$12</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Campo Lindo Chicken</span></h4>
+                                <p class="menu__item__description">Fava beans, artchokes, farro &amp; black current gastrique</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$24</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Bruschetta</span></h4>
+                                <p class="menu__item__description">Ciabatta bread, tomato, green basil, garlic, olive oil, salt, black pepper.</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$6</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Maple Farm Breast</span></h4>
+                                <p class="menu__item__description">Creamy polenta, english peas, carrots &amp; port sauce</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$29</span>
+                            </li>
+                        </ul>
+                        <h2 class="menu__title table__of__contents">Mains</h2>
+                        <ul class="menu__items">
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Sea-Trout</span></h4>
+                                <p class="menu__item__description">Roast Trout, English asparagus, Jersey Royals, watercress</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$26</span>
+                            </li>
+                            <li class="menu__item">
+                                <div class="menu__item-highlight-wrapper"><span class="menu__item-highlight-title">New</span>
+                                    <h4 class="menu__item__title"><span class="item__title">Filet De Saumon</span></h4>
+                                    <p class="menu__item__description">Baked salmon fillet, hollandaise sauce, rosemary salt potatoes</p>
+                                    <span class="menu__item__dots"></span>
+                                    <span class="menu__item__price">$13</span>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Confit de Canard</span></h4>
+                                <p class="menu__item__description">Duck confit, white bean &amp; ham cassoulet, wilted spinach</p>
+                                <span class="menu__item__dots"></span><span class="menu__item__price">$12</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Poulet Cordon Bleu</span></h4>
+                                <p class="menu__item__description">Paupiette of chicken, blue cheese &amp; ham, rosemary salt &nbsp;and beans</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$13</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Roasted Steak Roulade</span></h4>
+                                <p class="menu__item__description">Mint parsley with apple cider vinegar, salt, sugar &amp; spices</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$14</span></li>
+                        </ul>
+                        <h2 class="menu__title table__of__contents">Dessert</h2>
+                        <ul class="menu__items">
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Creme Brulee</span></h4>
+                                <p class="menu__item__description">Rich vanilla custard with a caramelised sugar crust</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$5</span>
+                            </li>
+                            <li class="menu__item">
+                                <div class="menu__item-highlight-wrapper">
+                                    <span class="menu__item-highlight-title">New</span>
+                                    <h4 class="menu__item__title"><span class="item__title">Tarte Tatin</span></h4>
+                                    <p class="menu__item__description">Caramelised apple tart, vanilla ice cream</p>
+                                    <span class="menu__item__dots"></span>
+                                    <span class="menu__item__price">$5</span>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Assiette de fromages</span></h4>
+                                <p class="menu__item__description">French cheese selection, chutney and biscuits</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$6</span>
+                            </li>
+                        </ul>
+                        <h2 class="menu__title table__of__contents">Beverages</h2>
+                        <ul class="menu__items">
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Champagne</span></h4>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$35</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Chapel Down</span></h4>
+                                <p class="menu__item__description">Brut&nbsp;Rose</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$47</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Chandon</span></h4>
+                                <p class="menu__item__description">Brut&nbsp;Imperial</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$46</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Chandon</span></h4>
+                                <p class="menu__item__description">Brut ARG</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$46</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Beers</span></h4>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$7</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Meantime Pilsner</span></h4>
+                                <p class="menu__item__description">Hells Lager</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$4</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Camden Hells Lager</span></h4>
+                                <p class="menu__item__description">Pale Ale</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$5</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Wyld Wood</span></h4>
+                                <p class="menu__item__description">Apple Cider</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$5</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">White&nbsp;Wine</span></h4>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$27</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Gascogne Blanc</span></h4>
+                                <p class="menu__item__description">Cuvee Jean Paul, 2013</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$20</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Alpha Zeta</span></h4>
+                                <p class="menu__item__description">Chardonnay, Veneto, 2011</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$36</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Fairview Darling</span></h4>
+                                <p class="menu__item__description">Paarl, South Africa, 2012</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$26</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Red Wine</span></h4>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$26</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Cabernet Sauvognon, South Africa, 2011</span></h4>
+                                <p class="menu__item__description">Paarl, South Africa, 2012</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$29</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">Malbec Montes Classic</span></h4>
+                                <p class="menu__item__description">Colchagua Valley, Mendoza, 2012</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$35</span>
+                            </li>
+                            <li class="menu__item">
+                                <h4 class="menu__item__title"><span class="item__title">16 Stops Mclaren</span></h4>
+                                <p class="menu__item__description">Vale Shiraz, Australia, 2012</p>
+                                <span class="menu__item__dots"></span>
+                                <span class="menu__item__price">$35</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__menu">
+        <nav class="footer__menu__navigation">
+            <ul class="footer__menu__navigation__list">
+                <li class="footer__menu__navigation__list__item">
+                    <a href="./reservation.html" class="footer__menu__navigation__list__item-link">Reservation</a>
+                </li>
+                <li class="footer__menu__navigation__list__item">|</li>
+                <li class="footer__menu__navigation__list__item">
+                    <a href="#" class="footer__menu__navigation__list__item-link">Menu</a>
+                </li>
+                <li class="footer__menu__navigation__list__item">|</li>
+                <li class="footer__menu__navigation__list__item">
+                    <a href="about.html" class="footer__menu__navigation__list__item-link">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="footer__contacts">
+        <p class="footer__contacts__call">Call:
+            <a href="tel: +123456789" class="footer__contacts__call-number">123456789</a>
+        </p>
+        <p class="footer__contacts__email">Email:
+            <a href="mailto: yourEmail@mail.com" class="footer__contacts__email-address">yourEmail@mail.com</a>
+    </div>
+    <div class="footer__subscribe">
+        <h2 class="footer__subscribe__title">Subscribe & Follow</h2>
+        <ul class="footer__subscribe__list">
+            <li class="footer__subscribe__list__item">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__subscribe__list__item-link">
+                    <img src="../media/images/facebook.png" alt="facebook">
+                </a>
+            </li>
+            <li class="footer__subscribe__list__item">
+                <a href="https://www.instagram.com/" target="_blank" class="footer__subscribe__list__item-link">
+                    <img src="../media/images/instagram.png" alt="instagram">
+                </a>
+            </li>
+            <li class="footer__subscribe__list__item">
+                <a href="https://twitter.com/" target="_blank" class="footer__subscribe__list__item-link">
+                    <img src="../media/images/twitter.png" alt="twitter">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script type="module" src="../js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import "index.css";
+.main {
+  padding: 10px 15px;
+}
+
+.main__rooms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main___rooms__plan {
+  flex-basis: 70%;
+}
+
+.main__container {
+  padding: 2% 0;
+}
+
+.main__title {
+  text-align: left;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+.main__preorder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ffe100;
+  border-radius: 5px;
+  padding: 2% 0;
+}
+
+.main__preorder__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #99cc41;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.main__preorder__item-name {
+  font-size: 1.5em;
+  width: 30%;
+}
+
+.main__preorder__item-description {
+  width: 40%;
+  font-style: italic;
+}
+
+.main__preorder__item-price {
+  width: 20%;
+  font-weight: bold;
+}
+
+.main__preorder__item-count {
+  width: 10%;
+}
+
+.main__preorder__item-count > input {
+  width: 40px;
+}
+
+.main__total {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 0;
+  font-size: 2.5em;
+}
+
+.reservation__window {
+  border: 3px solid #f5f2f0;
+  height: 570px;
+  display: block;
+}
+
+.main__rooms__arrow {
+  cursor: pointer;
+}
+
+.code__tabs__result {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main__reservationBtn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #99cc41;
+  padding: 1.5em 2em;
+  transition: 200ms ease;
+}
+
+.main__reservationBtn:hover {
+  background-color: #81b724;
+}
+
+.main__rooms__arrow {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main__rooms__arrow {
+    display: none;
+  }
+
+  .main___rooms__plan {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .main__preorder__item-description {
+    display: none;
+  }
+
+  .main__preorder__item-name {
+    width: 40%;
+  }
+
+  .main__preorder__item-price {
+    width: 20%;
+  }
+
+  .main__preorder__item-count {
+    width: 20%;
+  }
+}
+
+.reservation__window{
+  border: solid #f5f2f0;
+  border-width: 3px 3px 3px 3px;
+  height: 570px;
+  display: block;
+}
+
+.code__tabs__result {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*# sourceMappingURL=reservation.css.map */
